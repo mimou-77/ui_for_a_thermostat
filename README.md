@@ -12,9 +12,10 @@ clone the repository:
 ```
 git clone https://github.com/mimou-77/ui_for_a_thermostat.git
 ```
-> **optional:** delete build directory to have an idea on how to set parameters of the firmware (fonts used, ...)
+> ### optional:
+> delete build directory to have an idea on how to set parameters of the firmware (fonts used, ...)
 ```
-rm -rf ./build
+> rm -rf ./build
 ```
 > set target as esp32-s3
 ```
