@@ -21,7 +21,7 @@ git clone https://github.com/mimou-77/ui_for_a_thermostat.git
 > ```
 > idf.py set-target esp32s3
 > ```
-> [!NOTE]
+> > [!NOTE]
 > we added this line to the project's CMakeLists.txt to include the skconfig file to the firmware as the LVGL configuration file (sdkconfig file generated from the menuconfig)
 > <br/> be sure to add this line ↑ before the line: **project(ui3_therlostat)** in the CMakeLists.txt
 > ```
