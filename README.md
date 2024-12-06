@@ -1,13 +1,13 @@
-# ui_for_a_thermostat
-lvgl ui for a thermostat with updated temperature/humidity values retrieved every 5s from DHT11 sensor.
+# UI_for_a_thermostat
+LVGL ui for a thermostat with updated temperature/humidity values retrieved every 5s from DHT11 sensor.
 Uses esp-idf.
 
 > [!NOTE]
-> compatible only with esp32-S3-box3. You can modify the code to make it compatible with your MCU.
->  GPIO configuration for the sensor is in **Sensor.h**
->  ui configuration is in **ui.h**
+> Compatible only with esp32-S3-box3. You can modify the code to make it compatible with your MCU.
+> <br/> GPIO configuration for the sensor is in **Sensor.h**
+> <br/> UI configuration is in **ui.h**
 
-## getting started:
+## Getting started:
 clone the repository:
 ```
 git clone https://github.com/mimou-77/ui_for_a_thermostat.git
