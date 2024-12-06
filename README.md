@@ -4,8 +4,8 @@ Uses esp-idf.
 
 > [!NOTE]
 > compatible only with esp32-S3-box3. You can modify the code to make it compatible with your MCU.
-> GPIO configuration for the sensor is in **Sensor.h**
-> ui configuration is in **ui.h**
+>  GPIO configuration for the sensor is in **Sensor.h**
+>  ui configuration is in **ui.h**
 
 ## getting started:
 clone the repository:
