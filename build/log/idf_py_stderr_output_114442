@@ -1,0 +1,32 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40048839: uart_tx_one_char_uart in ROM
+[0m
+[0;33m--- 0x4200dc93: lv_obj_class_create_obj at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_class.c:88
+[0m
+[0;33m--- 0x400555cd: strcpy in ROM
+0x400555e1: strcpy in ROM
+[0m
+[0;33m--- 0x4200dc90: lv_obj_class_create_obj at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_class.c:88
+0x4201a671: lv_label_create at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/widgets/lv_label.c:76
+0x4200a90f: set_mode at /home/mariem/ui3_thermostat/main/ui.c:251
+0x4200aa5a: switch_mode_value_changed_cb at /home/mariem/ui3_thermostat/main/ui.c:306
+0x4200ad89: event_send_core at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:461
+0x4200ae36: lv_event_send at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:74
+0x4200d6d5: lv_obj_event at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj.c:741
+0x4204cd21: lv_obj_event_base at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:96
+0x4201b9fc: lv_switch_event at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/widgets/lv_switch.c:116
+0x4204cd21: lv_obj_event_base at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:96
+0x4200ad59: event_send_core at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:452
+0x4200ae36: lv_event_send at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:74
+0x4200b26a: indev_proc_release at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_indev.c:969
+0x4200bee2: indev_pointer_proc at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_indev.c:383
+0x4200bfe9: lv_indev_read_timer_cb at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_indev.c:101
+0x42018931: lv_timer_exec at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_timer.c:313 (discriminator 2)
+0x420189db: lv_timer_handler at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_timer.c:109
+0x42033df0: lvgl_port_task at /home/mariem/ui3_thermostat/managed_components/espressif__esp_lvgl_port/esp_lvgl_port.c:691
+0x4037d201: vPortTaskWrapper at /home/mariem/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c00: esp_restart_noos at /home/mariem/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0m

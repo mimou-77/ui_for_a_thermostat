@@ -1,0 +1,74 @@
+[0;32mI (177) esp_image: segment 4: paddr=000911b0 vaddr=4037c2bc size9) app_init: Project name:     ui3_thermostat[0m
+[0;32mI (223) ESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xa (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048839
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ef8
+entry 0x403c8928
+[0;32mI (18) boot: ESP-IDF a97a7b09-dirty 2nd stage bootloader[0m
+[0;32mI (18) boot: compile time Nov 27 2024 09:29:54[0m
+[0;32mI (18) boot: Multicore bootloader[0m
+[0;32mI (19) boot: chip revision: v0.2[0m
+[0;32mI (22) boot: efuse block revision: v1.3[0m
+[0;32mI (26) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (29) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (33) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (37) boot: Enabling RNG early entropy source...[0m
+[0;32mI (41) boot: Partition Table:[0m
+[0;32mI (44) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (50) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (57) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (63) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (70) boot: End of partition table[0m
+[0;32mI (73) esp_image: segment 0: paddr=00010020 vaddr=3c060020 size=24ec0h (151232) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=00034ee8 vaddr=3fc96000 size=02e6ch ( 11884) load[0m
+[0;32mI (110) esp_image: segment 2: paddr=00037d5c vaddr=40374000 size=082bch ( 33468) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=51188h (332168) map[0m
+[0;32mI (177) esp_image: segment 4: paddr=000911b0 vaddr=4037c2bc size=09cb4h ( 40116) load[0m
+[0;32mI (187) esp_image: segment 5: paddr=0009ae6c vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (194) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (194) boot: Disabling RNG early entropy source...[0m
+[0;32mI (204) cpu_start: Multicore app[0m
+[0;32mI (214) cpu_start: Pro cpu start user code[0m
+[0;32mI (214) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (214) app_init: Application information:[0m
+[0;32mI (214) app_init: Project name:     ui3_thermostat[0m
+[0;32mI (218) app_init: App version:      1[0m
+[0;32mI (222) app_init: Compile time:     Nov 27 2024 10:03:02[0m
+[0;32mI (227) app_init: ELF file SHA256:  500b6c81e...[0m
+[0;32mI (231) app_init: ESP-IDF:          a97a7b09-dirty[0m
+[0;32mI (235) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (239) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (243) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FCA1D00 len 00047A10 (286 KiB): RAM[0m
+[0;32mI (259) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (264) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (269) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (275) spi_flash: detected chip: gd[0m
+[0;32mI (277) spi_flash: flash io: dio[0m
+[0;33mW (280) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (303) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (309) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+[0;32mI (326) LVGL: Starting LVGL task[0m
+[0;33mW (326) ledc: GPIO 47 is not usable, maybe conflict with others[0m
+[0;32mI (336) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (336) gpio: GPIO[48]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (346) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (476) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (476) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (486) GT911: Unable to initialize the I2C address[0m
+[0;32mI (486) gpio: GPIO[3]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:2 [0m
+[0;32mI (496) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (496) GT911: TouchPad_Config_Version:65[0m
+[0;32mI (496) ESP-BOX-3: Setting LCD backlight: 100%[0m
+[0;32mI (506) ui: lv_arc_get_value(arc)=10[0m
+[0;32mI (506) main_task: Returned from app_main()[0m

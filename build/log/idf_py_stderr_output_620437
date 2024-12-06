@@ -1,0 +1,5 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4037ad7b: rtc_clk_cpu_freq_to_pll_mhz at /home/mariem/esp-idf/components/esp_hw_support/port/esp32s3/rtc_clk.c:221
+[0m
+[0m

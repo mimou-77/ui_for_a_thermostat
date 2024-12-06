@@ -1,0 +1,154 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40041a79: ets_delay_us in ROM
+[0m
+[0;33m--- 0x42039d36: task_wdt_timeout_handling at /home/mariem/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+0x4203a14c: task_wdt_isr at /home/mariem/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x403775c5: _xt_lowint1 at /home/mariem/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42018a41: block_next at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_tlsf.c:457
+0x42018f4c: lv_tlsf_realloc at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_tlsf.c:1205
+0x42017dc7: lv_mem_realloc at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_mem.c:206
+0x4200dbf3: lv_obj_class_create_obj at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_class.c:95
+0x4201a591: lv_label_create at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/widgets/lv_label.c:76
+0x4200a7fd: set_mode at /home/mariem/ui3_thermostat/main/ui.c:197
+0x4200aa8a: switch_mode_value_changed_cb at /home/mariem/ui3_thermostat/main/ui.c:281
+0x4200acb9: event_send_core at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:461
+0x4200ad66: lv_event_send at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:74
+0x4200d605: lv_obj_event at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj.c:741
+0x4204cc1d: lv_obj_event_base at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:96
+0x4201b91c: lv_switch_event at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/widgets/lv_switch.c:116
+0x4204cc1d: lv_obj_event_base at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:96
+0x4200ac89: event_send_core at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:452
+0x4200ad66: lv_event_send at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:74
+0x4200b19a: indev_proc_release at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_indev.c:969
+0x4200be12: indev_pointer_proc at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_indev.c:383
+0x4200bf19: lv_indev_read_timer_cb at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_indev.c:101
+0x42018851: lv_timer_exec at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_timer.c:313 (discriminator 2)
+0x420188fb: lv_timer_handler at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_timer.c:109
+0x42033d10: lvgl_port_task at /home/mariem/ui3_thermostat/managed_components/espressif__esp_lvgl_port/esp_lvgl_port.c:691
+0x4037d201: vPortTaskWrapper at /home/mariem/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x42039d36: task_wdt_timeout_handling at /home/mariem/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+0x4203a14c: task_wdt_isr at /home/mariem/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x403775c5: _xt_lowint1 at /home/mariem/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42018a41: block_next at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_tlsf.c:457
+0x42018f4c: lv_tlsf_realloc at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_tlsf.c:1205
+0x42017dc7: lv_mem_realloc at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_mem.c:206
+0x4200dbf3: lv_obj_class_create_obj at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_class.c:95
+0x4201a591: lv_label_create at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/widgets/lv_label.c:76
+0x4200a7fd: set_mode at /home/mariem/ui3_thermostat/main/ui.c:197
+0x4200aa8a: switch_mode_value_changed_cb at /home/mariem/ui3_thermostat/main/ui.c:281
+0x4200acb9: event_send_core at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:461
+0x4200ad66: lv_event_send at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:74
+0x4200d605: lv_obj_event at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj.c:741
+0x4204cc1d: lv_obj_event_base at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:96
+0x4201b91c: lv_switch_event at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/widgets/lv_switch.c:116
+0x4204cc1d: lv_obj_event_base at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:96
+0x4200ac89: event_send_core at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:452
+0x4200ad66: lv_event_send at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:74
+0x4200b19a: indev_proc_release at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_indev.c:969
+0x4200be12: indev_pointer_proc at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_indev.c:383
+0x4200bf19: lv_indev_read_timer_cb at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_indev.c:101
+0x42018851: lv_timer_exec at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_timer.c:313 (discriminator 2)
+0x420188fb: lv_timer_handler at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_timer.c:109
+0x42033d10: lvgl_port_task at /home/mariem/ui3_thermostat/managed_components/espressif__esp_lvgl_port/esp_lvgl_port.c:691
+0x4037d201: vPortTaskWrapper at /home/mariem/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x42039d36: task_wdt_timeout_handling at /home/mariem/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+0x4203a14c: task_wdt_isr at /home/mariem/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x403775c5: _xt_lowint1 at /home/mariem/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42018a41: block_next at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_tlsf.c:457
+0x42018f4c: lv_tlsf_realloc at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_tlsf.c:1205
+0x42017dc7: lv_mem_realloc at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_mem.c:206
+0x4200dbf3: lv_obj_class_create_obj at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_class.c:95
+0x4201a591: lv_label_create at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/widgets/lv_label.c:76
+0x4200a7fd: set_mode at /home/mariem/ui3_thermostat/main/ui.c:197
+0x4200aa8a: switch_mode_value_changed_cb at /home/mariem/ui3_thermostat/main/ui.c:281
+0x4200acb9: event_send_core at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:461
+0x4200ad66: lv_event_send at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:74
+0x4200d605: lv_obj_event at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj.c:741
+0x4204cc1d: lv_obj_event_base at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:96
+0x4201b91c: lv_switch_event at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/widgets/lv_switch.c:116
+0x4204cc1d: lv_obj_event_base at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:96
+0x4200ac89: event_send_core at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:452
+0x4200ad66: lv_event_send at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:74
+0x4200b19a: indev_proc_release at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_indev.c:969
+0x4200be12: indev_pointer_proc at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_indev.c:383
+0x4200bf19: lv_indev_read_timer_cb at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_indev.c:101
+0x42018851: lv_timer_exec at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_timer.c:313 (discriminator 2)
+0x420188fb: lv_timer_handler at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_timer.c:109
+0x42033d10: lvgl_port_task at /home/mariem/ui3_thermostat/managed_components/espressif__esp_lvgl_port/esp_lvgl_port.c:691
+0x4037d201: vPortTaskWrapper at /home/mariem/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x42039d36: task_wdt_timeout_handling at /home/mariem/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+0x4203a14c: task_wdt_isr at /home/mariem/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x403775c5: _xt_lowint1 at /home/mariem/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42018a41: block_next at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_tlsf.c:457
+0x42018f4c: lv_tlsf_realloc at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_tlsf.c:1205
+0x42017dc7: lv_mem_realloc at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_mem.c:206
+0x4200dbf3: lv_obj_class_create_obj at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_class.c:95
+0x4201a591: lv_label_create at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/widgets/lv_label.c:76
+0x4200a7fd: set_mode at /home/mariem/ui3_thermostat/main/ui.c:197
+0x4200aa8a: switch_mode_value_changed_cb at /home/mariem/ui3_thermostat/main/ui.c:281
+0x4200acb9: event_send_core at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:461
+0x4200ad66: lv_event_send at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:74
+0x4200d605: lv_obj_event at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj.c:741
+0x4204cc1d: lv_obj_event_base at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:96
+0x4201b91c: lv_switch_event at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/widgets/lv_switch.c:116
+0x4204cc1d: lv_obj_event_base at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:96
+0x4200ac89: event_send_core at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:452
+0x4200ad66: lv_event_send at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:74
+0x4200b19a: indev_proc_release at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_indev.c:969
+0x4200be12: indev_pointer_proc at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_indev.c:383
+0x4200bf19: lv_indev_read_timer_cb at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_indev.c:101
+0x42018851: lv_timer_exec at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_timer.c:313 (discriminator 2)
+0x420188fb: lv_timer_handler at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_timer.c:109
+0x42033d10: lvgl_port_task at /home/mariem/ui3_thermostat/managed_components/espressif__esp_lvgl_port/esp_lvgl_port.c:691
+0x4037d201: vPortTaskWrapper at /home/mariem/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Writing to serial is timing out. Please make sure that your application supports an interactive console and that you have picked the correct console for serial communication.[0m
+[0;33m--- 0x42039d36: task_wdt_timeout_handling at /home/mariem/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+0x4203a14c: task_wdt_isr at /home/mariem/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x403775c5: _xt_lowint1 at /home/mariem/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42018a41: block_next at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_tlsf.c:457
+0x42018f4c: lv_tlsf_realloc at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_tlsf.c:1205
+0x42017dc7: lv_mem_realloc at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_mem.c:206
+0x4200dbf3: lv_obj_class_create_obj at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_class.c:95
+0x4201a591: lv_label_create at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/widgets/lv_label.c:76
+0x4200a7fd: set_mode at /home/mariem/ui3_thermostat/main/ui.c:197
+0x4200aa8a: switch_mode_value_changed_cb at /home/mariem/ui3_thermostat/main/ui.c:281
+0x4200acb9: event_send_core at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:461
+0x4200ad66: lv_event_send at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:74
+0x4200d605: lv_obj_event at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj.c:741
+0x4204cc1d: lv_obj_event_base at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:96
+0x4201b91c: lv_switch_event at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/widgets/lv_switch.c:116
+0x4204cc1d: lv_obj_event_base at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:96
+0x4200ac89: event_send_core at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:452
+0x4200ad66: lv_event_send at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:74
+0x4200b19a: indev_proc_release at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_indev.c:969
+0x4200be12: indev_pointer_proc at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_indev.c:383
+0x4200bf19: lv_indev_read_timer_cb at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_indev.c:101
+0x42018851: lv_timer_exec at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_timer.c:313 (discriminator 2)
+0x420188fb: lv_timer_handler at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_timer.c:109
+0x42033d10: lvgl_port_task at /home/mariem/ui3_thermostat/managed_components/espressif__esp_lvgl_port/esp_lvgl_port.c:691
+0x4037d201: vPortTaskWrapper at /home/mariem/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- Warning: Writing to serial is timing out. Please make sure that your application supports an interactive console and that you have picked the correct console for serial communication.[0m
+[0;33m--- Warning: Writing to serial is timing out. Please make sure that your application supports an interactive console and that you have picked the correct console for serial communication.[0m
+[0;33m--- 0x42039d36: task_wdt_timeout_handling at /home/mariem/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+0x4203a14c: task_wdt_isr at /home/mariem/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x403775c5: _xt_lowint1 at /home/mariem/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42018a41: block_next at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_tlsf.c:457
+0x42018f4c: lv_tlsf_realloc at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_tlsf.c:1205
+0x42017dc7: lv_mem_realloc at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_mem.c:206
+0x4200dbf3: lv_obj_class_create_obj at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_class.c:95
+0x4201a591: lv_label_create at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/widgets/lv_label.c:76
+0x4200a7fd: set_mode at /home/mariem/ui3_thermostat/main/ui.c:197
+0x4200aa8a: switch_mode_value_changed_cb at /home/mariem/ui3_thermostat/main/ui.c:281
+0x4200acb9: event_send_core at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:461
+0x4200ad66: lv_event_send at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:74
+0x4200d605: lv_obj_event at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj.c:741
+0x4204cc1d: lv_obj_event_base at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:96
+0x4201b91c: lv_switch_event at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/widgets/lv_switch.c:116
+0x4204cc1d: lv_obj_event_base at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:96
+0x4200ac89: event_send_core at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_ev

@@ -1,0 +1,5 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x420507d6: rtc_init at /home/mariem/esp-idf/components/esp_hw_support/port/esp32s3/rtc_init.c:60
+[0m
+[0m

@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/mariem/ui3_thermostat/build/CMakeFiles/bootloader
+/home/mariem/ui3_thermostat/build/CMakeFiles/bootloader.rule
+/home/mariem/ui3_thermostat/build/CMakeFiles/bootloader-complete.rule
+/home/mariem/ui3_thermostat/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/mariem/ui3_thermostat/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/mariem/ui3_thermostat/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/mariem/ui3_thermostat/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/mariem/ui3_thermostat/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/mariem/ui3_thermostat/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/mariem/ui3_thermostat/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

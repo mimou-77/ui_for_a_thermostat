@@ -1,0 +1,728 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xa (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037a246
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ef8
+entry 0x403c8928
+[0;32mI (18) boot: ESP-IDF a97a7b09-dirty 2nd stage bootloader[0m
+[0;32mI (18) boot: compile time Nov 27 2024 09:29:54[0m
+[0;32mI (18) boot: Multicore bootloader[0m
+[0;32mI (19) boot: chip revision: v0.2[0m
+[0;32mI (22) boot: efuse block revision: v1.3[0m
+[0;32mI (26) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (29) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (33) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (37) boot: Enabling RNG early entropy source...[0m
+[0;32mI (41) boot: Partition Table:[0m
+[0;32mI (44) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (50) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (57) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (63) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (70) boot: End of partition table[0m
+[0;32mI (73) esp_image: segment 0: paddr=00010020 vaddr=3c060020 size=39430h (234544) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=00049458 vaddr=3fc96000 size=02e6ch ( 11884) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0004c2cc vaddr=40374000 size=03d4ch ( 15692) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=52154h (336212) map[0m
+[0;32mI (193) esp_image: segment 4: paddr=000a217c vaddr=40377d4c size=0e224h ( 57892) load[0m
+[0;32mI (206) esp_image: segment 5: paddr=000b03a8 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (213) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (213) boot: Disabling RNG early entropy source...[0m
+[0;32mI (223) cpu_start: Multicore app[0m
+[0;32mI (233) cpu_start: Pro cpu start user code[0m
+[0;32mI (233) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (233) app_init: Application information:[0m
+[0;32mI (233) app_init: Project name:     ui3_thermostat[0m
+[0;32mI (237) app_init: App version:      1[0m
+[0;32mI (241) app_init: Compile time:     Dec  4 2024 09:01:37[0m
+[0;32mI (246) app_init: ELF file SHA256:  bb0205245...[0m
+[0;32mI (250) app_init: ESP-IDF:          a97a7b09-dirty[0m
+[0;32mI (254) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (258) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (262) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (266) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (272) heap_init: At 3FCA1D60 len 000479B0 (286 KiB): RAM[0m
+[0;32mI (278) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (283) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (288) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (294) spi_flash: detected chip: gd[0m
+[0;32mI (296) spi_flash: flash io: dio[0m
+[0;33mW (299) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (312) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (322) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (328) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (335) main_task: Started on CPU0[0m
+[0;32mI (345) main_task: Calling app_main()[0m
+[0;32mI (345) LVGL: Starting LVGL task[0m
+[0;33mW (345) ledc: GPIO 47 is not usable, maybe conflict with others[0m
+[0;32mI (355) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (355) gpio: GPIO[48]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (365) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (495) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (495) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (505) GT911: Unable to initialize the I2C address[0m
+[0;32mI (505) gpio: GPIO[3]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:2 [0m
+[0;32mI (515) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (515) GT911: TouchPad_Config_Version:65[0m
+[0;32mI (515) ESP-BOX-3: Setting LCD backlight: 100%[0m
+[0;32mI (535) main_task: Returned from app_main()[0m
+[0;32mI (2805) ui: checked[0m
+[0;32mI (2815) ui: mode 'c' set[0m
+[0;32mI (3035) ui: not checked[0m
+[0;32mI (3045) ui: mode 'h' set[0m
+[0;32mI (3205) ui: checked[0m
+[0;32mI (3215) ui: mode 'c' set[0m
+[0;32mI (3405) ui: not checked[0m
+[0;32mI (3415) ui: mode 'h' set[0m
+[0;32mI (3575) ui: checked[0m
+[0;32mI (3585) ui: mode 'c' set[0m
+[0;32mI (3745) ui: not checked[0m
+[0;32mI (3755) ui: mode 'h' set[0m
+[0;32mI (3945) ui: checked[0m
+[0;32mI (3955) ui: mode 'c' set[0m
+[0;32mI (4115) ui: not checked[0m
+[0;32mI (4125) ui: mode 'h' set[0m
+[0;32mI (4285) ui: checked[0m
+[0;32mI (4295) ui: mode 'c' set[0m
+[0;32mI (4455) ui: not checked[0m
+[0;32mI (4465) ui: mode 'h' set[0m
+[0;32mI (4685) ui: checked[0m
+[0;32mI (4695) ui: mode 'c' set[0m
+[0;32mI (4855) ui: not checked[0m
+[0;32mI (4865) ui: mode 'h' set[0m
+[0;32mI (5025) ui: checked[0m
+[0;32mI (5035) ui: mode 'c' set[0m
+[0;32mI (5225) ui: not checked[0m
+[0;32mI (5235) ui: mode 'h' set[0m
+[0;32mI (5395) ui: checked[0m
+[0;32mI (5405) ui: mode 'c' set[0m
+[0;32mI (5595) ui: not checked[0m
+[0;32mI (5605) ui: mode 'h' set[0m
+[0;32mI (5765) ui: checked[0m
+[0;32mI (5775) ui: mode 'c' set[0m
+[0;32mI (5965) ui: not checked[0m
+[0;32mI (5975) ui: mode 'h' set[0m
+[0;32mI (6165) ui: checked[0m
+[0;32mI (6175) ui: mode 'c' set[0m
+[0;32mI (6335) ui: not checked[0m
+[0;32mI (6345) ui: mode 'h' set[0m
+[0;32mI (6535) ui: checked[0m
+[0;32mI (6545) ui: mode 'c' set[0m
+[0;32mI (6735) ui: not checked[0m
+[0;32mI (6745) ui: mode 'h' set[0m
+[0;32mI (6935) ui: checked[0m
+[0;32mI (6945) ui: mode 'c' set[0m
+[0;32mI (7105) ui: not checked[0m
+[0;32mI (7115) ui: mode 'h' set[0m
+[0;32mI (7305) ui: checked[0m
+[0;32mI (7315) ui: mode 'c' set[0m
+[0;32mI (7475) ui: not checked[0m
+[0;32mI (7485) ui: mode 'h' set[0m
+[0;32mI (7705) ui: checked[0m
+[0;32mI (7715) ui: mode 'c' set[0m
+[0;32mI (7875) ui: not checked[0m
+[0;32mI (7885) ui: mode 'h' set[0m
+[0;32mI (8075) ui: checked[0m
+[0;32mI (8085) ui: mode 'c' set[0m
+[0;32mI (8275) ui: not checked[0m
+[0;32mI (8285) ui: mode 'h' set[0m
+[0;32mI (8445) ui: checked[0m
+[0;32mI (8455) ui: mode 'c' set[0m
+[0;32mI (8645) ui: not checked[0m
+[0;32mI (8655) ui: mode 'h' set[0m
+[0;32mI (8875) ui: checked[0m
+[0;32mI (8885) ui: mode 'c' set[0m
+[0;32mI (9045) ui: not checked[0m
+[0;32mI (9055) ui: mode 'h' set[0m
+[0;32mI (9275) ui: checked[0m
+[0;32mI (9285) ui: mode 'c' set[0m
+[0;32mI (9475) ui: not checked[0m
+[0;32mI (9485) ui: mode 'h' set[0m
+[0;32mI (9675) ui: checked[0m
+[0;32mI (9685) ui: mode 'c' set[0m
+[0;32mI (9875) ui: not checked[0m
+[0;32mI (9885) ui: mode 'h' set[0m
+[0;32mI (10075) ui: checked[0m
+[0;32mI (10085) ui: mode 'c' set[0m
+[0;32mI (10275) ui: not checked[0m
+[0;32mI (10285) ui: mode 'h' set[0m
+[0;32mI (10475) ui: checked[0m
+[0;32mI (10485) ui: mode 'c' set[0m
+[0;32mI (10675) ui: not checked[0m
+[0;32mI (10685) ui: mode 'h' set[0m
+[0;32mI (10875) ui: checked[0m
+[0;32mI (10885) ui: mode 'c' set[0m
+[0;32mI (11075) ui: not checked[0m
+[0;32mI (11085) ui: mode 'h' set[0m
+[0;32mI (11245) ui: checked[0m
+[0;32mI (11255) ui: mode 'c' set[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x7 (TG0WDT_SYS_RST),boot:0xa (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40385dd4
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ef8
+entry 0x403c8928
+[0;32mI (18) boot: ESP-IDF a97a7b09-dirty 2nd stage bootloader[0m
+[0;32mI (18) boot: compile time Nov 27 2024 09:29:54[0m
+[0;32mI (18) boot: Multicore bootloader[0m
+[0;32mI (19) boot: chip revision: v0.2[0m
+[0;32mI (22) boot: efuse block revision: v1.3[0m
+[0;32mI (25) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (29) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (33) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;33mW (37) boot.esp32s3: PRO CPU has been reset by WDT.[0m
+[0;33mW (41) boot.esp32s3: APP CPU has been reset by WDT.[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3c060020 size=39430h (234544) map[0m
+[0;32mI (131) esp_image: segment 1: paddr=00049458 vaddr=3fc96000 size=02e6ch ( 11884) load[0m
+[0;32mI (134) esp_image: segment 2: paddr=0004c2cc vaddr=40374000 size=03d4ch ( 15692) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=52154h (336212) map[0m
+[0;32mI (202) esp_image: segment 4: paddr=000a217c vaddr=40377d4c size=0e224h ( 57892) load[0m
+[0;32mI (215) esp_image: segment 5: paddr=000b03a8 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (222) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (222) boot: Disabling RNG early entropy source...[0m
+[0;32mI (232) cpu_start: Multicore app[0m
+[0;32mI (242) cpu_start: Pro cpu start user code[0m
+[0;32mI (242) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (242) app_init: Application information:[0m
+[0;32mI (242) app_init: Project name:     ui3_thermostat[0m
+[0;32mI (246) app_init: App version:      1[0m
+[0;32mI (250) app_init: Compile time:     Dec  4 2024 09:01:37[0m
+[0;32mI (255) app_init: ELF file SHA256:  bb0205245...[0m
+[0;32mI (259) app_init: ESP-IDF:          a97a7b09-dirty[0m
+[0;32mI (263) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (267) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (271) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (275) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (282) heap_init: At 3FCA1D60 len 000479B0 (286 KiB): RAM[0m
+[0;32mI (287) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (292) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (297) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (303) spi_flash: detected chip: gd[0m
+[0;32mI (306) spi_flash: flash io: dio[0m
+[0;33mW (308) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (321) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (331) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (337) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (344) main_task: Started on CPU0[0m
+[0;32mI (354) main_task: Calling app_main()[0m
+[0;32mI (354) LVGL: Starting LVGL task[0m
+[0;33mW (354) ledc: GPIO 47 is not usable, maybe conflict with others[0m
+[0;32mI (364) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) gpio: GPIO[48]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (374) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (504) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (504) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (514) GT911: Unable to initialize the I2C address[0m
+[0;32mI (514) gpio: GPIO[3]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:2 [0m
+[0;32mI (524) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (524) GT911: TouchPad_Config_Version:65[0m
+[0;32mI (524) ESP-BOX-3: Setting LCD backlight: 100%[0m
+[0;32mI (544) main_task: Returned from app_main()[0m
+[0;32mI (17304) ui: checked[0m
+[0;32mI (17314) ui: mode 'c' set[0m
+[0;32mI (17444) ui: not checked[0m
+[0;32mI (17454) ui: mode 'h' set[0m
+[0;32mI (17914) ui: checked[0m
+[0;32mI (17924) ui: mode 'c' set[0m
+[0;32mI (18084) ui: not checked[0m
+[0;32mI (18094) ui: mode 'h' set[0m
+[0;32mI (18254) ui: checked[0m
+[0;32mI (18264) ui: mode 'c' set[0m
+[0;32mI (18394) ui: not checked[0m
+[0;32mI (18404) ui: mode 'h' set[0m
+[0;32mI (18534) ui: checked[0m
+[0;32mI (18544) ui: mode 'c' set[0m
+[0;32mI (18674) ui: not checked[0m
+[0;32mI (18684) ui: mode 'h' set[0m
+[0;32mI (18814) ui: checked[0m
+[0;32mI (18824) ui: mode 'c' set[0m
+[0;32mI (19104) ui: not checked[0m
+[0;32mI (19114) ui: mode 'h' set[0m
+[0;32mI (19364) ui: checked[0m
+[0;32mI (19374) ui: mode 'c' set[0m
+[0;32mI (19534) ui: not checked[0m
+[0;32mI (19544) ui: mode 'h' set[0m
+[0;32mI (19674) ui: checked[0m
+[0;32mI (19684) ui: mode 'c' set[0m
+[0;32mI (19844) ui: not checked[0m
+[0;32mI (19854) ui: mode 'h' set[0m
+[0;32mI (19984) ui: checked[0m
+[0;32mI (19994) ui: mode 'c' set[0m
+[0;32mI (20154) ui: not checked[0m
+[0;32mI (20164) ui: mode 'h' set[0m
+[0;32mI (20294) ui: checked[0m
+[0;32mI (20304) ui: mode 'c' set[0m
+[0;32mI (20464) ui: not checked[0m
+[0;32mI (20474) ui: mode 'h' set[0m
+[0;32mI (20604) ui: checked[0m
+[0;32mI (20614) ui: mode 'c' set[0m
+[0;32mI (20774) ui: not checked[0m
+[0;32mI (20784) ui: mode 'h' set[0m
+[0;32mI (20944) ui: checked[0m
+[0;32mI (20954) ui: mode 'c' set[0m
+[0;32mI (21084) ui: not checked[0m
+[0;32mI (21094) ui: mode 'h' set[0m
+[0;32mI (21254) ui: checked[0m
+[0;32mI (21264) ui: mode 'c' set[0m
+[0;32mI (21394) ui: not checked[0m
+[0;32mI (21404) ui: mode 'h' set[0m
+[0;32mI (21564) ui: checked[0m
+[0;32mI (21574) ui: mode 'c' set[0m
+[0;32mI (21704) ui: not checked[0m
+[0;32mI (21714) ui: mode 'h' set[0m
+[0;32mI (21844) ui: checked[0m
+[0;32mI (21854) ui: mode 'c' set[0m
+[0;32mI (22014) ui: not checked[0m
+[0;32mI (22024) ui: mode 'h' set[0m
+[0;32mI (22154) ui: checked[0m
+[0;32mI (22164) ui: mode 'c' set[0m
+[0;32mI (22324) ui: not checked[0m
+[0;32mI (22334) ui: mode 'h' set[0m
+[0;32mI (22464) ui: checked[0m
+[0;32mI (22474) ui: mode 'c' set[0m
+[0;32mI (22634) ui: not checked[0m
+[0;32mI (22644) ui: mode 'h' set[0m
+[0;32mI (22774) ui: checked[0m
+[0;32mI (22784) ui: mode 'c' set[0m
+[0;32mI (22944) ui: not checked[0m
+[0;32mI (22954) ui: mode 'h' set[0m
+[0;32mI (23084) ui: checked[0m
+[0;32mI (23094) ui: mode 'c' set[0m
+[0;32mI (23254) ui: not checked[0m
+[0;32mI (23264) ui: mode 'h' set[0m
+[0;32mI (23394) ui: checked[0m
+[0;32mI (23404) ui: mode 'c' set[0m
+[0;32mI (23564) ui: not checked[0m
+[0;32mI (23574) ui: mode 'h' set[0m
+[0;32mI (23764) ui: checked[0m
+[0;32mI (23774) ui: mode 'c' set[0m
+[0;32mI (23904) ui: not checked[0m
+[0;32mI (23914) ui: mode 'h' set[0m
+[0;32mI (24074) ui: checked[0m
+[0;32mI (24084) ui: mode 'c' set[0m
+[0;32mI (25594) ui: not checked[0m
+[0;32mI (25604) ui: mode 'h' set[0m
+[0;32mI (25734) ui: checked[0m
+[0;32mI (25744) ui: mode 'c' set[0m
+[0;32mI (25904) ui: not checked[0m
+[0;32mI (25914) ui: mode 'h' set[0m
+[0;32mI (26134) ui: checked[0m
+[0;32mI (26144) ui: mode 'c' set[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x7 (TG0WDT_SYS_RST),boot:0xa (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40385dda
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ef8
+entry 0x403c8928
+[0;32mI (18) boot: ESP-IDF a97a7b09-dirty 2nd stage bootloader[0m
+[0;32mI (18) boot: compile time Nov 27 2024 09:29:54[0m
+[0;32mI (18) boot: Multicore bootloader[0m
+[0;32mI (19) boot: chip revision: v0.2[0m
+[0;32mI (22) boot: efuse block revision: v1.3[0m
+[0;32mI (25) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (29) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (33) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;33mW (37) boot.esp32s3: PRO CPU has been reset by WDT.[0m
+[0;33mW (41) boot.esp32s3: APP CPU has been reset by WDT.[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3c060020 size=39430h (234544) map[0m
+[0;32mI (131) esp_image: segment 1: paddr=00049458 vaddr=3fc96000 size=02e6ch ( 11884) load[0m
+[0;32mI (134) esp_image: segment 2: paddr=0004c2cc vaddr=40374000 size=03d4ch ( 15692) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=52154h (336212) map[0m
+[0;32mI (202) esp_image: segment 4: paddr=000a217c vaddr=40377d4c size=0e224h ( 57892) load[0m
+[0;32mI (215) esp_image: segment 5: paddr=000b03a8 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (222) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (222) boot: Disabling RNG early entropy source...[0m
+[0;32mI (232) cpu_start: Multicore app[0m
+[0;32mI (242) cpu_start: Pro cpu start user code[0m
+[0;32mI (242) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (242) app_init: Application information:[0m
+[0;32mI (242) app_init: Project name:     ui3_thermostat[0m
+[0;32mI (246) app_init: App version:      1[0m
+[0;32mI (250) app_init: Compile time:     Dec  4 2024 09:01:37[0m
+[0;32mI (255) app_init: ELF file SHA256:  bb0205245...[0m
+[0;32mI (259) app_init: ESP-IDF:          a97a7b09-dirty[0m
+[0;32mI (263) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (267) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (271) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (275) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (282) heap_init: At 3FCA1D60 len 000479B0 (286 KiB): RAM[0m
+[0;32mI (287) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (292) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (297) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (303) spi_flash: detected chip: gd[0m
+[0;32mI (306) spi_flash: flash io: dio[0m
+[0;33mW (308) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (321) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (331) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (337) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (344) main_task: Started on CPU0[0m
+[0;32mI (354) main_task: Calling app_main()[0m
+[0;32mI (354) LVGL: Starting LVGL task[0m
+[0;33mW (354) ledc: GPIO 47 is not usable, maybe conflict with others[0m
+[0;32mI (364) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) gpio: GPIO[48]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (374) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (504) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (504) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (514) GT911: Unable to initialize the I2C address[0m
+[0;32mI (514) gpio: GPIO[3]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:2 [0m
+[0;32mI (524) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (524) GT911: TouchPad_Config_Version:65[0m
+[0;32mI (524) ESP-BOX-3: Setting LCD backlight: 100%[0m
+[0;32mI (544) main_task: Returned from app_main()[0m
+[0;32mI (3024) ui: checked[0m
+[0;32mI (3034) ui: mode 'c' set[0m
+[0;32mI (3194) ui: not checked[0m
+[0;32mI (3204) ui: mode 'h' set[0m
+[0;32mI (3364) ui: checked[0m
+[0;32mI (3374) ui: mode 'c' set[0m
+[0;32mI (3534) ui: not checked[0m
+[0;32mI (3544) ui: mode 'h' set[0m
+[0;32mI (3704) ui: checked[0m
+[0;32mI (3714) ui: mode 'c' set[0m
+[0;32mI (3874) ui: not checked[0m
+[0;32mI (3884) ui: mode 'h' set[0m
+[0;32mI (4044) ui: checked[0m
+[0;32mI (4054) ui: mode 'c' set[0m
+[0;32mI (4214) ui: not checked[0m
+[0;32mI (4224) ui: mode 'h' set[0m
+[0;32mI (4384) ui: checked[0m
+[0;32mI (4394) ui: mode 'c' set[0m
+[0;32mI (4554) ui: not checked[0m
+[0;32mI (4564) ui: mode 'h' set[0m
+[0;32mI (4724) ui: checked[0m
+[0;32mI (4734) ui: mode 'c' set[0m
+[0;32mI (4894) ui: not checked[0m
+[0;32mI (4904) ui: mode 'h' set[0m
+[0;32mI (5064) ui: checked[0m
+[0;32mI (5074) ui: mode 'c' set[0m
+[0;32mI (5234) ui: not checked[0m
+[0;32mI (5244) ui: mode 'h' set[0m
+[0;32mI (5404) ui: checked[0m
+[0;32mI (5414) ui: mode 'c' set[0m
+[0;32mI (5634) ui: not checked[0m
+[0;32mI (5644) ui: mode 'h' set[0m
+[0;32mI (5804) ui: checked[0m
+[0;32mI (5814) ui: mode 'c' set[0m
+[0;32mI (5974) ui: not checked[0m
+[0;32mI (5984) ui: mode 'h' set[0m
+[0;32mI (6144) ui: checked[0m
+[0;32mI (6154) ui: mode 'c' set[0m
+[0;32mI (6314) ui: not checked[0m
+[0;32mI (6324) ui: mode 'h' set[0m
+[0;32mI (6484) ui: checked[0m
+[0;32mI (6494) ui: mode 'c' set[0m
+[0;32mI (6654) ui: not checked[0m
+[0;32mI (6664) ui: mode 'h' set[0m
+[0;32mI (6854) ui: checked[0m
+[0;32mI (6864) ui: mode 'c' set[0m
+[0;32mI (7024) ui: not checked[0m
+[0;32mI (7034) ui: mode 'h' set[0m
+[0;32mI (7224) ui: checked[0m
+[0;32mI (7234) ui: mode 'c' set[0m
+[0;32mI (7424) ui: not checked[0m
+[0;32mI (7434) ui: mode 'h' set[0m
+[0;32mI (7594) ui: checked[0m
+[0;32mI (7604) ui: mode 'c' set[0m
+[0;32mI (7794) ui: not checked[0m
+[0;32mI (7804) ui: mode 'h' set[0m
+[0;32mI (7964) ui: checked[0m
+[0;32mI (7974) ui: mode 'c' set[0m
+[0;32mI (8194) ui: not checked[0m
+[0;32mI (8204) ui: mode 'h' set[0m
+[0;32mI (8364) ui: checked[0m
+[0;32mI (8374) ui: mode 'c' set[0m
+[0;32mI (8564) ui: not checked[0m
+[0;32mI (8574) ui: mode 'h' set[0m
+[0;32mI (8764) ui: checked[0m
+[0;32mI (8774) ui: mode 'c' set[0m
+[0;32mI (8964) ui: not checked[0m
+[0;32mI (8974) ui: mode 'h' set[0m
+[0;32mI (9134) ui: checked[0m
+[0;32mI (9144) ui: mode 'c' set[0m
+[0;32mI (9334) ui: not checked[0m
+[0;32mI (9344) ui: mode 'h' set[0m
+[0;32mI (9504) ui: checked[0m
+[0;32mI (9514) ui: mode 'c' set[0m
+[0;32mI (9674) ui: not checked[0m
+[0;32mI (9684) ui: mode 'h' set[0m
+[0;32mI (9874) ui: checked[0m
+[0;32mI (9884) ui: mode 'c' set[0m
+[0;32mI (10104) ui: not checked[0m
+[0;32mI (10114) ui: mode 'h' set[0m
+[0;32mI (10304) ui: checked[0m
+[0;32mI (10314) ui: mode 'c' set[0m
+[0;32mI (10504) ui: not checked[0m
+[0;32mI (10514) ui: mode 'h' set[0m
+[0;32mI (10704) ui: checked[0m
+[0;32mI (10714) ui: mode 'c' set[0m
+[0;32mI (10904) ui: not checked[0m
+[0;32mI (10914) ui: mode 'h' set[0m
+[0;32mI (11074) ui: checked[0m
+[0;32mI (11084) ui: mode 'c' set[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x7 (TG0WDT_SYS_RST),boot:0xa (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40385dce
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ef8
+entry 0x403c8928
+[0;32mI (18) boot: ESP-IDF a97a7b09-dirty 2nd stage bootloader[0m
+[0;32mI (18) boot: compile time Nov 27 2024 09:29:54[0m
+[0;32mI (18) boot: Multicore bootloader[0m
+[0;32mI (19) boot: chip revision: v0.2[0m
+[0;32mI (22) boot: efuse block revision: v1.3[0m
+[0;32mI (25) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (29) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (33) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;33mW (37) boot.esp32s3: PRO CPU has been reset by WDT.[0m
+[0;33mW (41) boot.esp32s3: APP CPU has been reset by WDT.[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3c060020 size=39430h (234544) map[0m
+[0;32mI (131) esp_image: segment 1: paddr=00049458 vaddr=3fc96000 size=02e6ch ( 11884) load[0m
+[0;32mI (134) esp_image: segment 2: paddr=0004c2cc vaddr=40374000 size=03d4ch ( 15692) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=52154h (336212) map[0m
+[0;32mI (202) esp_image: segment 4: paddr=000a217c vaddr=40377d4c size=0e224h ( 57892) load[0m
+[0;32mI (215) esp_image: segment 5: paddr=000b03a8 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (222) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (222) boot: Disabling RNG early entropy source...[0m
+[0;32mI (232) cpu_start: Multicore app[0m
+[0;32mI (242) cpu_start: Pro cpu start user code[0m
+[0;32mI (242) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (242) app_init: Application information:[0m
+[0;32mI (242) app_init: Project name:     ui3_thermostat[0m
+[0;32mI (246) app_init: App version:      1[0m
+[0;32mI (250) app_init: Compile time:     Dec  4 2024 09:01:37[0m
+[0;32mI (255) app_init: ELF file SHA256:  bb0205245...[0m
+[0;32mI (259) app_init: ESP-IDF:          a97a7b09-dirty[0m
+[0;32mI (264) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (267) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (271) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (275) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (282) heap_init: At 3FCA1D60 len 000479B0 (286 KiB): RAM[0m
+[0;32mI (287) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (292) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (297) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (303) spi_flash: detected chip: gd[0m
+[0;32mI (306) spi_flash: flash io: dio[0m
+[0;33mW (308) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (321) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (331) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (337) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (344) main_task: Started on CPU0[0m
+[0;32mI (354) main_task: Calling app_main()[0m
+[0;32mI (354) LVGL: Starting LVGL task[0m
+[0;33mW (354) ledc: GPIO 47 is not usable, maybe conflict with others[0m
+[0;32mI (364) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) gpio: GPIO[48]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (374) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (504) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (504) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (514) GT911: Unable to initialize the I2C address[0m
+[0;32mI (514) gpio: GPIO[3]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:2 [0m
+[0;32mI (524) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (524) GT911: TouchPad_Config_Version:65[0m
+[0;32mI (524) ESP-BOX-3: Setting LCD backlight: 100%[0m
+[0;32mI (544) main_task: Returned from app_main()[0m
+[0;32mI (2514) ui: checked[0m
+[0;32mI (2524) ui: mode 'c' set[0m
+[0;32mI (2684) ui: not checked[0m
+[0;32mI (2694) ui: mode 'h' set[0m
+[0;32mI (2854) ui: checked[0m
+[0;32mI (2864) ui: mode 'c' set[0m
+[0;32mI (3024) ui: not checked[0m
+[0;32mI (3034) ui: mode 'h' set[0m
+[0;32mI (3194) ui: checked[0m
+[0;32mI (3204) ui: mode 'c' set[0m
+[0;32mI (3364) ui: not checked[0m
+[0;32mI (3374) ui: mode 'h' set[0m
+[0;32mI (3564) ui: checked[0m
+[0;32mI (3574) ui: mode 'c' set[0m
+[0;32mI (3734) ui: not checked[0m
+[0;32mI (3744) ui: mode 'h' set[0m
+[0;32mI (3904) ui: checked[0m
+[0;32mI (3914) ui: mode 'c' set[0m
+[0;32mI (4074) ui: not checked[0m
+[0;32mI (4084) ui: mode 'h' set[0m
+[0;32mI (4244) ui: checked[0m
+[0;32mI (4254) ui: mode 'c' set[0m
+[0;32mI (4444) ui: not checked[0m
+[0;32mI (4454) ui: mode 'h' set[0m
+[0;32mI (4614) ui: checked[0m
+[0;32mI (4624) ui: mode 'c' set[0m
+[0;32mI (4784) ui: not checked[0m
+[0;32mI (4794) ui: mode 'h' set[0m
+[0;32mI (4984) ui: checked[0m
+[0;32mI (4994) ui: mode 'c' set[0m
+[0;32mI (5184) ui: not checked[0m
+[0;32mI (5194) ui: mode 'h' set[0m
+[0;32mI (5354) ui: checked[0m
+[0;32mI (5364) ui: mode 'c' set[0m
+[0;32mI (5524) ui: not checked[0m
+[0;32mI (5534) ui: mode 'h' set[0m
+[0;32mI (5694) ui: checked[0m
+[0;32mI (5704) ui: mode 'c' set[0m
+[0;32mI (5864) ui: not checked[0m
+[0;32mI (5874) ui: mode 'h' set[0m
+[0;32mI (6544) ui: checked[0m
+[0;32mI (6554) ui: mode 'c' set[0m
+[0;32mI (7314) ui: not checked[0m
+[0;32mI (7324) ui: mode 'h' set[0m
+[0;32mI (7514) ui: checked[0m
+[0;32mI (7524) ui: mode 'c' set[0m
+[0;32mI (7714) ui: not checked[0m
+[0;32mI (7724) ui: mode 'h' set[0m
+[0;32mI (8094) ui: checked[0m
+[0;32mI (8104) ui: mode 'c' set[0m
+[0;32mI (8294) ui: not checked[0m
+[0;32mI (8304) ui: mode 'h' set[0m
+[0;32mI (8464) ui: checked[0m
+[0;32mI (8474) ui: mode 'c' set[0m
+[0;32mI (8664) ui: not checked[0m
+[0;32mI (8674) ui: mode 'h' set[0m
+[0;32mI (8864) ui: checked[0m
+[0;32mI (8874) ui: mode 'c' set[0m
+[0;32mI (9034) ui: not checked[0m
+[0;32mI (9044) ui: mode 'h' set[0m
+[0;32mI (9234) ui: checked[0m
+[0;32mI (9244) ui: mode 'c' set[0m
+[0;32mI (9404) ui: not checked[0m
+[0;32mI (9414) ui: mode 'h' set[0m
+[0;32mI (9574) ui: checked[0m
+[0;32mI (9584) ui: mode 'c' set[0m
+[0;32mI (9774) ui: not checked[0m
+[0;32mI (9784) ui: mode 'h' set[0m
+[0;32mI (9974) ui: checked[0m
+[0;32mI (9984) ui: mode 'c' set[0m
+[0;32mI (10144) ui: not checked[0m
+[0;32mI (10154) ui: mode 'h' set[0m
+[0;32mI (10314) ui: checked[0m
+[0;32mI (10324) ui: mode 'c' set[0m
+[0;32mI (10484) ui: not checked[0m
+[0;32mI (10494) ui: mode 'h' set[0m
+[0;32mI (10684) ui: checked[0m
+[0;32mI (10694) ui: mode 'c' set[0m
+[0;32mI (10854) ui: not checked[0m
+[0;32mI (10864) ui: mode 'h' set[0m
+[0;32mI (11084) ui: checked[0m
+[0;32mI (11094) ui: mode 'c' set[0m
+[0;32mI (11254) ui: not checked[0m
+[0;32mI (11264) ui: mode 'h' set[0m
+[0;32mI (11454) ui: checked[0m
+[0;32mI (11464) ui: mode 'c' set[0m
+[0;32mI (11654) ui: not checked[0m
+[0;32mI (11664) ui: mode 'h' set[0m
+[0;32mI (11854) ui: checked[0m
+[0;32mI (11864) ui: mode 'c' set[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x7 (TG0WDT_SYS_RST),boot:0xa (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40385dd4
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ef8
+entry 0x403c8928
+[0;32mI (18) boot: ESP-IDF a97a7b09-dirty 2nd stage bootloader[0m
+[0;32mI (18) boot: compile time Nov 27 2024 09:29:54[0m
+[0;32mI (18) boot: Multicore bootloader[0m
+[0;32mI (19) boot: chip revision: v0.2[0m
+[0;32mI (22) boot: efuse block revision: v1.3[0m
+[0;32mI (25) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (29) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (33) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;33mW (37) boot.esp32s3: PRO CPU has been reset by WDT.[0m
+[0;33mW (41) boot.esp32s3: APP CPU has been reset by WDT.[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3c060020 size=39430h (234544) map[0m
+[0;32mI (131) esp_image: segment 1: paddr=00049458 vaddr=3fc96000 size=02e6ch ( 11884) load[0m
+[0;32mI (134) esp_image: segment 2: paddr=0004c2cc vaddr=40374000 size=03d4ch ( 15692) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=52154h (336212) map[0m
+[0;32mI (202) esp_image: segment 4: paddr=000a217c vaddr=40377d4c size=0e224h ( 57892) load[0m
+[0;32mI (215) esp_image: segment 5: paddr=000b03a8 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (222) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (222) boot: Disabling RNG early entropy source...[0m
+[0;32mI (232) cpu_start: Multicore app[0m
+[0;32mI (242) cpu_start: Pro cpu start user code[0m
+[0;32mI (242) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (242) app_init: Application information:[0m
+[0;32mI (242) app_init: Project name:     ui3_thermostat[0m
+[0;32mI (246) app_init: App version:      1[0m
+[0;32mI (250) app_init: Compile time:     Dec  4 2024 09:01:37[0m
+[0;32mI (255) app_init: ELF file SHA256:  bb0205245...[0m
+[0;32mI (259) app_init: ESP-IDF:          a97a7b09-dirty[0m
+[0;32mI (264) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (267) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (271) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (275) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (282) heap_init: At 3FCA1D60 len 000479B0 (286 KiB): RAM[0m
+[0;32mI (287) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (292) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (297) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (303) spi_flash: detected chip: gd[0m
+[0;32mI (306) spi_flash: flash io: dio[0m
+[0;33mW (308) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (321) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (331) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (337) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (344) main_task: Started on CPU0[0m
+[0;32mI (354) main_task: Calling app_main()[0m
+[0;32mI (354) LVGL: Starting LVGL task[0m
+[0;33mW (354) ledc: GPIO 47 is not usable, maybe conflict with others[0m
+[0;32mI (364) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) gpio: GPIO[48]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (374) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (504) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (504) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (514) GT911: Unable to initialize the I2C address[0m
+[0;32mI (514) gpio: GPIO[3]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:2 [0m
+[0;32mI (524) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (524) GT911: TouchPad_Config_Version:65[0m
+[0;32mI (524) ESP-BOX-3: Setting LCD backlight: 100%[0m
+[0;32mI (544) main_task: Returned from app_main()[0m

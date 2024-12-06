@@ -1,0 +1,131 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40048841: uart_tx_one_char_uart in ROM
+[0m
+[0;33m--- 0x4201142b: get_local_style at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:543 (discriminator 1)
+[0m
+[0;33m--- 0x4204dfcc: lv_style_set_prop_helper at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_style.c:402
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42011428: get_local_style at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:543 (discriminator 2)
+0x42011e45: lv_obj_set_local_style_prop at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:273
+0x420123d3: lv_obj_set_style_text_color at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:528
+0x4200aacc: switch_mode_value_changed_cb at /home/mariem/ui3_thermostat/main/ui.c:288 (discriminator 1)
+0x4200acc9: event_send_core at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:461
+0x4200ad76: lv_event_send at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:74
+0x4200a59f: set_mode at /home/mariem/ui3_thermostat/main/ui.c:91
+0x4200ab36: ui at /home/mariem/ui3_thermostat/main/ui.c:23
+0x4200a525: app_main at /home/mariem/ui3_thermostat/main/ui3_thermostat.c:49
+0x4205142b: main_task at /home/mariem/esp-idf/components/freertos/app_startup.c:208
+0x4037d201: vPortTaskWrapper at /home/mariem/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c00: esp_restart_noos at /home/mariem/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4201142b: get_local_style at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:543 (discriminator 1)
+[0m
+[0;33m--- 0x4204dfcc: lv_style_set_prop_helper at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_style.c:402
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42011428: get_local_style at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:543 (discriminator 2)
+0x42011e45: lv_obj_set_local_style_prop at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:273
+0x420123d3: lv_obj_set_style_text_color at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:528
+0x4200aacc: switch_mode_value_changed_cb at /home/mariem/ui3_thermostat/main/ui.c:288 (discriminator 1)
+0x4200acc9: event_send_core at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:461
+0x4200ad76: lv_event_send at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:74
+0x4200a59f: set_mode at /home/mariem/ui3_thermostat/main/ui.c:91
+0x4200ab36: ui at /home/mariem/ui3_thermostat/main/ui.c:23
+0x4200a525: app_main at /home/mariem/ui3_thermostat/main/ui3_thermostat.c:49
+0x4205142b: main_task at /home/mariem/esp-idf/components/freertos/app_startup.c:208
+0x4037d201: vPortTaskWrapper at /home/mariem/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c00: esp_restart_noos at /home/mariem/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4201142b: get_local_style at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:543 (discriminator 1)
+[0m
+[0;33m--- 0x4204dfcc: lv_style_set_prop_helper at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_style.c:402
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42011428: get_local_style at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:543 (discriminator 2)
+0x42011e45: lv_obj_set_local_style_prop at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:273
+0x420123d3: lv_obj_set_style_text_color at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:528
+0x4200aacc: switch_mode_value_changed_cb at /home/mariem/ui3_thermostat/main/ui.c:288 (discriminator 1)
+0x4200acc9: event_send_core at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:461
+0x4200ad76: lv_event_send at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:74
+0x4200a59f: set_mode at /home/mariem/ui3_thermostat/main/ui.c:91
+0x4200ab36: ui at /home/mariem/ui3_thermostat/main/ui.c:23
+0x4200a525: app_main at /home/mariem/ui3_thermostat/main/ui3_thermostat.c:49
+0x4205142b: main_task at /home/mariem/esp-idf/components/freertos/app_startup.c:208
+0x4037d201: vPortTaskWrapper at /home/mariem/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c00: esp_restart_noos at /home/mariem/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4201142b: get_local_style at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:543 (discriminator 1)
+[0m
+[0;33m--- 0x4204dfcc: lv_style_set_prop_helper at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_style.c:402
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42011428: get_local_style at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:543 (discriminator 2)
+0x42011e45: lv_obj_set_local_style_prop at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:273
+0x420123d3: lv_obj_set_style_text_color at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:528
+0x4200aacc: switch_mode_value_changed_cb at /home/mariem/ui3_thermostat/main/ui.c:288 (discriminator 1)
+0x4200acc9: event_send_core at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:461
+0x4200ad76: lv_event_send at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:74
+0x4200a59f: set_mode at /home/mariem/ui3_thermostat/main/ui.c:91
+0x4200ab36: ui at /home/mariem/ui3_thermostat/main/ui.c:23
+0x4200a525: app_main at /home/mariem/ui3_thermostat/main/ui3_thermostat.c:49
+0x4205142b: main_task at /home/mariem/esp-idf/components/freertos/app_startup.c:208
+0x4037d201: vPortTaskWrapper at /home/mariem/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c00: esp_restart_noos at /home/mariem/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4201142b: get_local_style at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:543 (discriminator 1)
+[0m
+[0;33m--- 0x4204dfcc: lv_style_set_prop_helper at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_style.c:402
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42011428: get_local_style at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:543 (discriminator 2)
+0x42011e45: lv_obj_set_local_style_prop at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:273
+0x420123d3: lv_obj_set_style_text_color at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:528
+0x4200aacc: switch_mode_value_changed_cb at /home/mariem/ui3_thermostat/main/ui.c:288 (discriminator 1)
+0x4200acc9: event_send_core at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:461
+0x4200ad76: lv_event_send at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:74
+0x4200a59f: set_mode at /home/mariem/ui3_thermostat/main/ui.c:91
+0x4200ab36: ui at /home/mariem/ui3_thermostat/main/ui.c:23
+0x4200a525: app_main at /home/mariem/ui3_thermostat/main/ui3_thermostat.c:49
+0x4205142b: main_task at /home/mariem/esp-idf/components/freertos/app_startup.c:208
+0x4037d201: vPortTaskWrapper at /home/mariem/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c00: esp_restart_noos at /home/mariem/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4201142b: get_local_style at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:543 (discriminator 1)
+[0m
+[0;33m--- 0x4204dfcc: lv_style_set_prop_helper at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/misc/lv_style.c:402
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x42011428: get_local_style at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:543 (discriminator 2)
+0x42011e45: lv_obj_set_local_style_prop at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_style.c:273
+0x420123d3: lv_obj_set_style_text_color at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_obj_style_gen.c:528
+0x4200aacc: switch_mode_value_changed_cb at /home/mariem/ui3_thermostat/main/ui.c:288 (discriminator 1)
+0x4200acc9: event_send_core at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:461
+0x4200ad76: lv_event_send at /home/mariem/ui3_thermostat/managed_components/lvgl__lvgl/src/core/lv_event.c:74
+0x4200a59f: set_mode at /home/mariem/ui3_thermostat/main/ui.c:91
+0x4200ab36: ui at /home/mariem/ui3_thermostat/main/ui.c:23
+0x4200a525: app_main at /home/mariem/ui3_thermostat/main/ui3_thermostat.c:49
+0x4205142b: main_task at /home/mariem/esp-idf/components/freertos/app_startup.c:208
+0x4037d201: vPortTaskWrapper at /home/mariem/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c00: esp_restart_noos at /home/mariem/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0m

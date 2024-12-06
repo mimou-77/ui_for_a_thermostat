@@ -1,0 +1,6 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x420055ca: memprot_ll_rtcfast_set_permissions at /home/mariem/esp-idf/components/hal/esp32s3/include/hal/memprot_ll.h:824
+ (inlined by) memprot_ll_rtcfast_set_pms_area at /home/mariem/esp-idf/components/hal/esp32s3/include/hal/memprot_ll.h:847
+[0m
+[0m

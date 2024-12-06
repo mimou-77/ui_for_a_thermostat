@@ -1,0 +1,393 @@
+[0;32mI (225) cpu_start: Pro cpu start user code[0m
+[0;32mI (225) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (225) app_init: Application information:[0m
+[0;32mI (225) app_init: ProjectESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xa (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048836
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ef8
+entry 0x403c8928
+[0;32mI (18) boot: ESP-IDF a97a7b09-dirty 2nd stage bootloader[0m
+[0;32mI (18) boot: compile time Nov 27 2024 09:29:54[0m
+[0;32mI (18) boot: Multicore bootloader[0m
+[0;32mI (19) boot: chip revision: v0.2[0m
+[0;32mI (22) boot: efuse block revision: v1.3[0m
+[0;32mI (26) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (29) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (33) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (37) boot: Enabling RNG early entropy source...[0m
+[0;32mI (41) boot: Partition Table:[0m
+[0;32mI (44) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (50) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (57) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (63) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (70) boot: End of partition table[0m
+[0;32mI (73) esp_image: segment 0: paddr=00010020 vaddr=3c060020 size=2bd60h (179552) map[0m
+[0;32mI (112) esp_image: segment 1: paddr=0003bd88 vaddr=3fc96000 size=02e6ch ( 11884) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=0003ebfc vaddr=40374000 size=0141ch (  5148) load[0m
+[0;32mI (117) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=51c3ch (334908) map[0m
+[0;32mI (183) esp_image: segment 4: paddr=00091c64 vaddr=4037541c size=10b54h ( 68436) load[0m
+[0;32mI (198) esp_image: segment 5: paddr=000a27c0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (205) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (225) cpu_start: Pro cpu start user code[0m
+[0;32mI (225) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (225) app_init: Application information:[0m
+[0;32mI (225) app_init: Project name:     ui3_thermostat[0m
+[0;32mI (229) app_init: App version:      1[0m
+[0;32mI (233) app_init: Compile time:     Nov 27 2024 13:42:10[0m
+[0;32mI (238) app_init: ELF file SHA256:  8c036d411...[0m
+[0;32mI (242) app_init: ESP-IDF:          a97a7b09-dirty[0m
+[0;32mI (247) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (251) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (255) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (258) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (265) heap_init: At 3FCA1D00 len 00047A10 (286 KiB): RAM[0m
+[0;32mI (270) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (275) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (287) spi_flash: detected chip: gd[0m
+[0;32mI (289) spi_flash: flash io: dio[0m
+[0;33mW (292) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (304) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (314) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (320) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (327) main_task: Started on CPU0[0m
+[0;32mI (337) main_task: Calling app_main()[0m
+[0;32mI (337) LVGL: Starting LVGL task[0m
+[0;33mW (337) ledc: GPIO 47 is not usable, maybe conflict with others[0m
+[0;32mI (347) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (347) gpio: GPIO[48]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (357) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (487) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (487) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (497) GT911: Unable to initialize the I2C address[0m
+[0;32mI (497) gpio: GPIO[3]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:2 [0m
+[0;32mI (507) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (507) GT911: TouchPad_Config_Version:65[0m
+[0;32mI (507) ESP-BOX-3: Setting LCD backlight: 100%[0m
+[0;32mI (517) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (527) main_task: Returned from app_main()[0m
+[0;32mI (4817) ui: pressed[0m
+[0;32mI (4847) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (4877) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (4967) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (4997) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (5027) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (5057) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (5087) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (5117) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (5147) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (5177) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (5207) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (5237) ui: released[0m
+[0;32mI (5897) ui: pressed[0m
+[0;32mI (5927) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (6017) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (6047) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (6077) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (6107) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (6137) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (6167) ui: released[0m
+[0;32mI (9077) ui: pressed[0m
+[0;32mI (9107) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (9197) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (9227) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (9257) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (9317) ui: released[0m
+[0;32mI (10427) ui: pressed[0m
+[0;32mI (10547) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (10577) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (10607) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (10637) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (10667) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (10697) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (10727) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (10757) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (10787) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (10817) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (10847) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (10877) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (10907) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (10937) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (10967) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (10997) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (11027) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (11057) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (11087) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (11117) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (11147) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (11177) ui: lv_arc_get_value(arc)=6.0[0m
+[0;32mI (11867) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (11897) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (11927) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (11957) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (11987) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (12017) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (12047) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (12077) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (12107) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (12137) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (12167) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (12197) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (12227) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (12257) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (12287) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (12317) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (12347) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (12377) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (12407) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (12467) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (12497) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (12527) ui: released[0m
+[0;32mI (13367) ui: pressed[0m
+[0;32mI (13457) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (13487) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (13517) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (13547) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (13577) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (13607) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (13637) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (13667) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (13697) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (13727) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (13757) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (13787) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (13817) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (13847) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (13877) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (13907) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (13937) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (13967) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (13997) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (14027) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (14057) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (14087) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (14147) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (14177) ui: lv_arc_get_value(arc)=6.0[0m
+[0;32mI (14387) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (14417) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (14447) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (14477) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (14507) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (14537) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (14567) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (14597) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (14627) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (14657) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (14687) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (14717) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (14747) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (14777) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (14807) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (14837) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (14867) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (14897) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (14927) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (14957) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (14987) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (15077) ui: released[0m
+[0;32mI (15497) ui: pressed[0m
+[0;32mI (15557) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (15587) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (15617) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (15647) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (15677) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (15707) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (15737) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (15767) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (15797) ui: released[0m
+[0;32mI (22097) ui: pressed[0m
+[0;32mI (22367) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (22397) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (22427) ui: released[0m
+[0;32mI (23297) ui: pressed[0m
+[0;32mI (23327) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (23447) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (23477) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (23507) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (23537) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (23567) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (23597) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (23627) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (23657) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (23687) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (23717) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (23747) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (23777) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (23807) ui: released[0m
+[0;32mI (24377) ui: pressed[0m
+[0;32mI (24407) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (24527) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (24557) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (24587) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (24617) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (24647) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (24677) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (24707) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (24737) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (24767) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (24857) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (24887) ui: released[0m
+[0;32mI (26027) ui: pressed[0m
+[0;32mI (26057) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (26267) ui: released[0m
+[0;32mI (29657) ui: pressed[0m
+[0;32mI (29687) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (29807) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (29837) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (29867) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (29897) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (29927) ui: released[0m
+[0;32mI (30527) ui: pressed[0m
+[0;32mI (30557) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (30677) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (30707) ui: lv_arc_get_value(arc)=0.0[0m
+[0;32mI (30737) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (30767) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (30797) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (30827) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (30887) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (30917) ui: released[0m
+[0;32mI (34517) ui: pressed[0m
+[0;32mI (34697) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (34727) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (34757) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (34787) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (34817) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (34847) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (34877) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (34937) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (34997) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (35027) ui: released[0m
+[0;32mI (36017) ui: pressed[0m
+[0;32mI (36047) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (36167) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (36197) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (36257) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (36317) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (36347) ui: released[0m
+[0;32mI (37127) ui: pressed[0m
+[0;32mI (37157) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (37277) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (37307) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (37337) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (37397) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (37487) ui: released[0m
+[0;32mI (44957) ui: pressed[0m
+[0;32mI (44987) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (45107) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (45137) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (45167) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (45197) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (45227) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (45257) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (45287) ui: released[0m
+[0;32mI (49787) ui: pressed[0m
+[0;32mI (49817) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (49907) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (49937) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (49967) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (49997) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (50027) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (50057) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (50087) ui: released[0m
+[0;32mI (51947) ui: pressed[0m
+[0;32mI (51977) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (52097) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (52127) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (52157) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (52187) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (52217) ui: released[0m
+[0;32mI (53087) ui: pressed[0m
+[0;32mI (53117) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (53237) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (53267) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (53297) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (53327) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (53357) ui: released[0m
+[0;32mI (55187) ui: pressed[0m
+[0;32mI (55337) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (55367) ui: released[0m
+[0;32mI (61577) ui: pressed[0m
+[0;32mI (61607) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (61757) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (61787) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (61817) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (61847) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (61877) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (61907) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (61967) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (61997) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (62117) ui: lv_arc_get_value(arc)=6.0[0m
+[0;32mI (62417) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (62477) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (62507) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (62537) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (62567) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (62597) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (62627) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (62657) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (62687) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (62717) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (62747) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (62777) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (62837) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (62897) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (62957) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (63077) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (63227) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (63347) ui: released[0m
+[0;32mI (79217) ui: pressed[0m
+[0;32mI (79247) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (79367) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (79397) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (79427) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (79457) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (79487) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (79517) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (79547) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (79577) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (79607) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (79637) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (79667) ui: released[0m
+[0;32mI (80627) ui: pressed[0m
+[0;32mI (80657) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (80687) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (80717) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (80747) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (80777) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (80807) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (80837) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (80867) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (80897) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (80927) ui: released[0m
+[0;32mI (81287) ui: pressed[0m
+[0;32mI (81317) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (81347) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (81377) ui: lv_arc_get_value(arc)=5.0[0m
+[0;32mI (81617) ui: released[0m
+[0;32mI (81857) ui: pressed[0m
+[0;32mI (81887) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (81917) ui: lv_arc_get_value(arc)=4.0[0m
+[0;32mI (81947) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (81977) ui: lv_arc_get_value(arc)=3.0[0m
+[0;32mI (82007) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (82037) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (82187) ui: released[0m
+[0;32mI (82487) ui: pressed[0m
+[0;32mI (82517) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (82547) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (82577) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (82727) ui: released[0m
+[0;32mI (83057) ui: pressed[0m
+[0;32mI (83087) ui: lv_arc_get_value(arc)=1.0[0m
+[0;32mI (83117) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (83147) ui: lv_arc_get_value(arc)=2.0[0m
+[0;32mI (83207) ui: released[0m

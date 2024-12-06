@@ -1,0 +1,7 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4205049b: xPortEnterCriticalTimeoutSafe at /home/mariem/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:581
+ (inlined by) vPortEnterCriticalSafe at /home/mariem/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:588
+ (inlined by) periph_module_enable at /home/mariem/esp-idf/components/esp_hw_support/periph_ctrl.c:62
+[0m
+[0m

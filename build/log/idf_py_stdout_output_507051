@@ -1,0 +1,103 @@
+[0;32mI (166) esp_image: segment 3: paddr=00081168 vaddr=3fc96650 size  ui3_thermostat[0m
+[0;32mI (221) app_init: App veESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xa (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048839
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ef8
+entry 0x403c8928
+[0;32mI (18) boot: ESP-IDF a97a7b09-dirty 2nd stage bootloader[0m
+[0;32mI (18) boot: compile time Nov 27 2024 09:29:54[0m
+[0;32mI (18) boot: Multicore bootloader[0m
+[0;32mI (19) boot: chip revision: v0.2[0m
+[0;32mI (22) boot: efuse block revision: v1.3[0m
+[0;32mI (25) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (29) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (33) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (37) boot: Enabling RNG early entropy source...[0m
+[0;32mI (41) boot: Partition Table:[0m
+[0;32mI (44) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (50) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (57) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (63) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (70) boot: End of partition table[0m
+[0;32mI (73) esp_image: segment 0: paddr=00010020 vaddr=3c060020 size=1f9a0h (129440) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0002f9c8 vaddr=3fc96000 size=00650h (  1616) load[0m
+[0;32mI (104) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=51140h (332096) map[0m
+[0;32mI (166) esp_image: segment 3: paddr=00081168 vaddr=3fc96650 size=0281ch ( 10268) load[0m
+[0;32mI (168) esp_image: segment 4: paddr=0008398c vaddr=40374000 size=11f70h ( 73584) load[0m
+[0;32mI (186) esp_image: segment 5: paddr=00095904 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (193) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (193) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (212) cpu_start: Pro cpu start user code[0m
+[0;32mI (213) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (213) app_init: Application information:[0m
+[0;32mI (213) app_init: Project name:     ui3_thermostat[0m
+[0;32mI (217) app_init: App version:      1[0m
+[0;32mI (221) app_init: Compile time:     Nov 27 2024 10:03:02[0m
+[0;32mI (226) app_init: ELF file SHA256:  032a7477e...[0m
+[0;32mI (230) app_init: ESP-IDF:          a97a7b09-dirty[0m
+[0;32mI (234) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (238) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (252) heap_init: At 3FCA1CF0 len 00047A20 (286 KiB): RAM[0m
+[0;32mI (257) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (263) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (274) spi_flash: detected chip: gd[0m
+[0;32mI (276) spi_flash: flash io: dio[0m
+[0;33mW (279) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (292) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (302) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (308) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+[0;32mI (325) LVGL: Starting LVGL task[0m
+[0;33mW (325) ledc: GPIO 47 is not usable, maybe conflict with others[0m
+[0;32mI (335) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (335) gpio: GPIO[48]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (345) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (475) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (475) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (485) GT911: Unable to initialize the I2C address[0m
+[0;32mI (485) gpio: GPIO[3]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:2 [0m
+[0;32mI (495) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (495) GT911: TouchPad_Config_Version:65[0m
+[0;32mI (495) ESP-BOX-3: Setting LCD backlight: 100%[0m
+[0;32mI (505) ui: lv_arc_get_value(arc)=10[0m
+[0;32mI (505) main_task: Returned from app_main()[0m
+[0;32mI (8245) ui: pressed[0m
+[0;32mI (8275) ui: lv_arc_get_value(arc)=11[0m
+[0;32mI (8425) ui: lv_arc_get_value(arc)=13[0m
+[0;32mI (8455) ui: lv_arc_get_value(arc)=21[0m
+[0;32mI (8485) ui: lv_arc_get_value(arc)=25[0m
+[0;32mI (8515) ui: lv_arc_get_value(arc)=30[0m
+[0;32mI (8545) ui: lv_arc_get_value(arc)=38[0m
+[0;32mI (8575) ui: lv_arc_get_value(arc)=45[0m
+[0;32mI (8605) ui: lv_arc_get_value(arc)=51[0m
+[0;32mI (8635) ui: lv_arc_get_value(arc)=54[0m
+[0;32mI (8665) ui: lv_arc_get_value(arc)=55[0m
+[0;32mI (8695) ui: lv_arc_get_value(arc)=56[0m
+[0;32mI (8725) ui: lv_arc_get_value(arc)=58[0m
+[0;32mI (8815) ui: released[0m
+[0;32mI (9235) ui: pressed[0m
+[0;32mI (9385) ui: lv_arc_get_value(arc)=47[0m
+[0;32mI (9415) ui: lv_arc_get_value(arc)=39[0m
+[0;32mI (9445) ui: lv_arc_get_value(arc)=34[0m
+[0;32mI (9475) ui: lv_arc_get_value(arc)=31[0m
+[0;32mI (9505) ui: lv_arc_get_value(arc)=28[0m
+[0;32mI (9535) ui: lv_arc_get_value(arc)=27[0m
+[0;32mI (9595) ui: released[0m
+[0;32mI (10675) ui: pressed[0m
+[0;32mI (10825) ui: lv_arc_get_value(arc)=25[0m
+[0;32mI (10855) ui: lv_arc_get_value(arc)=21[0m
+[0;32mI (10915) ui: lv_arc_get_value(arc)=20[0m
+[0;32mI (10945) ui: lv_arc_get_value(arc)=19[0m
+[0;32mI (10975) ui: lv_arc_get_value(arc)=18[0m
+[0;32mI (11035) ui: released[0m

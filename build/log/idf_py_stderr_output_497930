@@ -1,0 +1,6 @@
+CMake Error at CMakeLists.txt:16 (target_compile_definitions):
+  Cannot specify compile definitions for target "my_target" which is not
+  built by this project.
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

@@ -1,0 +1,59 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40048839: uart_tx_one_char_uart in ROM
+[0m
+[0;33m--- 0x4200ac31: get_t_h at /home/mariem/ui3_thermostat/main/sensor.c:76 (discriminator 1)
+[0m
+[0;33m--- 0x4200ac2e: get_t_h at /home/mariem/ui3_thermostat/main/sensor.c:76 (discriminator 13)
+0x4203b2ae: timer_process_alarm at /home/mariem/esp-idf/components/esp_timer/src/esp_timer.c:435
+0x4203b2fd: timer_task at /home/mariem/esp-idf/components/esp_timer/src/esp_timer.c:461 (discriminator 1)
+0x4037d201: vPortTaskWrapper at /home/mariem/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c00: esp_restart_noos at /home/mariem/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200ac31: get_t_h at /home/mariem/ui3_thermostat/main/sensor.c:76 (discriminator 1)
+[0m
+[0;33m--- 0x4200ac2e: get_t_h at /home/mariem/ui3_thermostat/main/sensor.c:76 (discriminator 13)
+0x4203b2ae: timer_process_alarm at /home/mariem/esp-idf/components/esp_timer/src/esp_timer.c:435
+0x4203b2fd: timer_task at /home/mariem/esp-idf/components/esp_timer/src/esp_timer.c:461 (discriminator 1)
+0x4037d201: vPortTaskWrapper at /home/mariem/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c00: esp_restart_noos at /home/mariem/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200ac31: get_t_h at /home/mariem/ui3_thermostat/main/sensor.c:76 (discriminator 1)
+[0m
+[0;33m--- 0x4200ac2e: get_t_h at /home/mariem/ui3_thermostat/main/sensor.c:76 (discriminator 13)
+0x4203b2ae: timer_process_alarm at /home/mariem/esp-idf/components/esp_timer/src/esp_timer.c:435
+0x4203b2fd: timer_task at /home/mariem/esp-idf/components/esp_timer/src/esp_timer.c:461 (discriminator 1)
+0x4037d201: vPortTaskWrapper at /home/mariem/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c00: esp_restart_noos at /home/mariem/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200ac31: get_t_h at /home/mariem/ui3_thermostat/main/sensor.c:76 (discriminator 1)
+[0m
+[0;33m--- 0x4200ac2e: get_t_h at /home/mariem/ui3_thermostat/main/sensor.c:76 (discriminator 13)
+0x4203b2ae: timer_process_alarm at /home/mariem/esp-idf/components/esp_timer/src/esp_timer.c:435
+0x4203b2fd: timer_task at /home/mariem/esp-idf/components/esp_timer/src/esp_timer.c:461 (discriminator 1)
+0x4037d201: vPortTaskWrapper at /home/mariem/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c00: esp_restart_noos at /home/mariem/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200ac31: get_t_h at /home/mariem/ui3_thermostat/main/sensor.c:76 (discriminator 1)
+[0m
+[0;33m--- 0x4200ac2e: get_t_h at /home/mariem/ui3_thermostat/main/sensor.c:76 (discriminator 13)
+0x4203b2ae: timer_process_alarm at /home/mariem/esp-idf/components/esp_timer/src/esp_timer.c:435
+0x4203b2fd: timer_task at /home/mariem/esp-idf/components/esp_timer/src/esp_timer.c:461 (discriminator 1)
+0x4037d201: vPortTaskWrapper at /home/mariem/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c00: esp_restart_noos at /home/mariem/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4200ac31: get_t_h at /home/mariem/ui3_thermostat/main/sensor.c:76 (discriminator 1)
+[0m
+[0;33m--- 0x4200ac2e: get_t_h at /home/mariem/ui3_thermostat/main/sensor.c:76 (discriminator 13)
+0x4203b2ae: timer_process_alarm at /home/mariem/esp-idf/components/esp_timer/src/esp_timer.c:435
+0x4203b2fd: timer_task at /home/mariem/esp-idf/components/esp_timer/src/esp_timer.c:461 (discriminator 1)
+0x4037d201: vPortTaskWrapper at /home/mariem/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c00: esp_restart_noos at /home/mariem/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0m

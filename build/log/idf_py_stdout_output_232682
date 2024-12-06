@@ -1,0 +1,292 @@
+[0;32mI (166) esp_image: segment 4: paddr=00081e3c vaddr=4037b99c size      a97a7b09-dirty[0m
+[0;32mI (230) efuse_init: Min ESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xa (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048836
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ef8
+entry 0x403c8928
+[0;32mI (18) boot: ESP-IDF a97a7b09-dirty 2nd stage bootloader[0m
+[0;32mI (18) boot: compile time Nov 27 2024 09:29:54[0m
+[0;32mI (18) boot: Multicore bootloader[0m
+[0;32mI (19) boot: chip revision: v0.2[0m
+[0;32mI (22) boot: efuse block revision: v1.3[0m
+[0;32mI (25) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (29) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (33) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (37) boot: Enabling RNG early entropy source...[0m
+[0;32mI (41) boot: Partition Table:[0m
+[0;32mI (44) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (50) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (57) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (63) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (70) boot: End of partition table[0m
+[0;32mI (73) esp_image: segment 0: paddr=00010020 vaddr=3c060020 size=157d0h ( 88016) map[0m
+[0;32mI (96) esp_image: segment 1: paddr=000257f8 vaddr=3fc96000 size=02e7ch ( 11900) load[0m
+[0;32mI (99) esp_image: segment 2: paddr=0002867c vaddr=40374000 size=0799ch ( 31132) load[0m
+[0;32mI (107) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=51e14h (335380) map[0m
+[0;32mI (166) esp_image: segment 4: paddr=00081e3c vaddr=4037b99c size=0a5d4h ( 42452) load[0m
+[0;32mI (176) esp_image: segment 5: paddr=0008c418 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (194) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     ui3_thermostat[0m
+[0;32mI (208) app_init: App version:      1[0m
+[0;32mI (211) app_init: Compile time:     Dec  4 2024 11:44:40[0m
+[0;32mI (216) app_init: ELF file SHA256:  edbca5a34...[0m
+[0;32mI (220) app_init: ESP-IDF:          a97a7b09-dirty[0m
+[0;32mI (225) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (237) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (243) heap_init: At 3FCA1CF8 len 00047A18 (286 KiB): RAM[0m
+[0;32mI (248) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (253) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (258) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (265) spi_flash: detected chip: gd[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (282) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (292) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (298) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (305) main_task: Started on CPU0[0m
+[0;32mI (315) main_task: Calling app_main()[0m
+[0;32mI (315) LVGL: Starting LVGL task[0m
+[0;33mW (315) ledc: GPIO 47 is not usable, maybe conflict with others[0m
+[0;32mI (325) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (325) gpio: GPIO[48]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (335) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (465) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (465) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (475) GT911: Unable to initialize the I2C address[0m
+[0;32mI (475) gpio: GPIO[3]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:2 [0m
+[0;32mI (485) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (485) GT911: TouchPad_Config_Version:65[0m
+[0;32mI (485) ESP-BOX-3: Setting LCD backlight: 100%[0m
+[0;32mI (495) gpio: GPIO[10]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (505) sensor: gpio_config done[0m
+[0;32mI (505) gpio: GPIO[10]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (515) sensor: pin reset done[0m
+[0;32mI (515) sensor: timer created[0m
+[0;32mI (515) sensor: started timer, time since boot = 254408 us[0m
+[0;32mI (525) main_task: Returned from app_main()[0m
+[0;32mI (5515) sensor: entered get_t_h[0m
+[1;31mE (5535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (7535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (10515) sensor: entered get_t_h[0m
+[1;31mE (10535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (12535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (15515) sensor: entered get_t_h[0m
+[1;31mE (15535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (17535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (20515) sensor: entered get_t_h[0m
+[1;31mE (20535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (22535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (25515) sensor: entered get_t_h[0m
+[1;31mE (25535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (27535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (30515) sensor: entered get_t_h[0m
+[1;31mE (30535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (32535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (35515) sensor: entered get_t_h[0m
+[1;31mE (35535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (37535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (40515) sensor: entered get_t_h[0m
+[1;31mE (40535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (42535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (45515) sensor: entered get_t_h[0m
+[1;31mE (45535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (47535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (50515) sensor: entered get_t_h[0m
+[1;31mE (50535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (52535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (55515) sensor: entered get_t_h[0m
+[1;31mE (55535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (57535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (60515) sensor: entered get_t_h[0m
+[1;31mE (60535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (62535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (65515) sensor: entered get_t_h[0m
+[1;31mE (65535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (67535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (70515) sensor: entered get_t_h[0m
+[1;31mE (70535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (72535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (75515) sensor: entered get_t_h[0m
+[1;31mE (75535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (77535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (80515) sensor: entered get_t_h[0m
+[1;31mE (80535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (82535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (85515) sensor: entered get_t_h[0m
+[1;31mE (85535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (87535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (90515) sensor: entered get_t_h[0m
+[1;31mE (90535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (92535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (95515) sensor: entered get_t_h[0m
+[1;31mE (95535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (97535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (100515) sensor: entered get_t_h[0m
+[1;31mE (100535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (102535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (105515) sensor: entered get_t_h[0m
+[1;31mE (105535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (107535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (110515) sensor: entered get_t_h[0m
+[1;31mE (110535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (112535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (115515) sensor: entered get_t_h[0m
+[1;31mE (115535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (117535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (120515) sensor: entered get_t_h[0m
+[1;31mE (120535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (122535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (125515) sensor: entered get_t_h[0m
+[1;31mE (125535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (127535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (130515) sensor: entered get_t_h[0m
+[1;31mE (130535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (132535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (135515) sensor: entered get_t_h[0m
+[1;31mE (135535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (137535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (140515) sensor: entered get_t_h[0m
+[1;31mE (140535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (142535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (145515) sensor: entered get_t_h[0m
+[1;31mE (145535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (147535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (150515) sensor: entered get_t_h[0m
+[1;31mE (150535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (152535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (155515) sensor: entered get_t_h[0m
+[1;31mE (155535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (157535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (160515) sensor: entered get_t_h[0m
+[1;31mE (160535) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (162535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (165515) sensor: entered get_t_h[0m
+[1;31mE (165535) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (167535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (170515) sensor: entered get_t_h[0m
+[1;31mE (170535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (172535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (175515) sensor: entered get_t_h[0m
+[1;31mE (175535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (177535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (180515) sensor: entered get_t_h[0m
+[1;31mE (180535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (182535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (185515) sensor: entered get_t_h[0m
+[1;31mE (185535) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (187535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (190515) sensor: entered get_t_h[0m
+[1;31mE (190535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (192535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (195515) sensor: entered get_t_h[0m
+[1;31mE (195535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (197535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (200515) sensor: entered get_t_h[0m
+[1;31mE (200535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (202535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (205515) sensor: entered get_t_h[0m
+[1;31mE (205535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (207535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (210515) sensor: entered get_t_h[0m
+[1;31mE (210535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (212535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (215515) sensor: entered get_t_h[0m
+[1;31mE (215535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (217535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (220515) sensor: entered get_t_h[0m
+[1;31mE (220535) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (222535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (225515) sensor: entered get_t_h[0m
+[1;31mE (225535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (227535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (230515) sensor: entered get_t_h[0m
+[1;31mE (230535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (232535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (235515) sensor: entered get_t_h[0m
+[1;31mE (235535) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (237535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (240515) sensor: entered get_t_h[0m
+[1;31mE (240535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (242535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (245515) sensor: entered get_t_h[0m
+[1;31mE (245535) dht: Initialization error, problem in phase 'C'[0m
+[0;32mI (247535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (250515) sensor: entered get_t_h[0m
+[1;31mE (250535) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (252535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (255515) sensor: entered get_t_h[0m
+[1;31mE (255535) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (257535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (260515) sensor: entered get_t_h[0m
+[1;31mE (260535) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (262535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (265515) sensor: entered get_t_h[0m
+[1;31mE (265535) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (267535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (270515) sensor: entered get_t_h[0m
+[1;31mE (270535) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (272535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (275515) sensor: entered get_t_h[0m
+[1;31mE (275535) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (277535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (280515) sensor: entered get_t_h[0m
+[1;31mE (280535) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (282535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (285515) sensor: entered get_t_h[0m
+[1;31mE (285535) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (287535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (290515) sensor: entered get_t_h[0m
+[1;31mE (290535) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (292535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (295515) sensor: entered get_t_h[0m
+[1;31mE (295535) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (297535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (300515) sensor: entered get_t_h[0m
+[1;31mE (300535) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (302535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (305515) sensor: entered get_t_h[0m
+[1;31mE (305535) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (307535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (310515) sensor: entered get_t_h[0m
+[1;31mE (310535) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (312535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (315515) sensor: entered get_t_h[0m
+[1;31mE (315535) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (317535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (320515) sensor: entered get_t_h[0m
+[1;31mE (320535) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (322535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (325515) sensor: entered get_t_h[0m
+[1;31mE (325535) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (327535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (330515) sensor: entered get_t_h[0m
+[1;31mE (330535) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (332535) sensor: t = 0.000000, h = 0.000000[0m
+[0;32mI (335515) sensor: entered get_t_h[0m
+[0;32mI (337545) sensor: t = 20.000000, h = 87.000000[0m
+[0;32mI (340515) sensor: entered get_t_h[0m
+[0;32mI (342545) sensor: t = 20.000000, h = 87.000000[0m
+[0;32mI (345515) sensor: entered get_t_h[0m
+[0;32mI (347545) sensor: t = 20.000000, h = 87.000000[0m
+[0;32mI (350515) sensor: entered get_t_h[0m
+[0;32mI (352545) sensor: t = 20.000000, h = 87.000000[0m
+[0;32mI (355515) sensor: entered get_t_h[0m
+[0;32mI (357545) sensor: t = 20.000000, h = 87.000000[0m
+[0;32mI (360515) sensor: entered get_t_h[0m
+[0;32mI (362545) sensor: t = 20.000000, h = 87.000000[0m
+[0;32mI (365515) sensor: entered get_t_h[0m
+[0;32mI (367545) sensor: t = 20.000000, h = 87.000000[0m
+[0;32mI (370515) sensor: entered get_t_h[0m
